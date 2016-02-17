@@ -8,7 +8,7 @@ write_to_file(){
 		if [ ! -f "$file" ]; then
 			touch "$file"
 		else
-			if  grep "192.168.43.1" $file
+			if  grep "192.168.43.1\|192.168.42.129" $file
 			 then
 				rm "$file"
 				touch "$file"
